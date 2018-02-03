@@ -14,9 +14,15 @@
 <div ng-controller="FirstCtrl">
 <p>Witaj, {{message}}</p>
 </div>
+<a ui-sref="register">Wejdz do formularza</a><br>
+<a href="login.html" target="_blank">Zaloguj się </a><br>
+<a href= "https://gilek.e-korepetycje.net/#opinie">Sprawdź moje opinie na popularnym serwisie</a>
 
-<p>Witaj, niezmiernie miło mi, że zainteresowałeś się tą stroną. </p>
+<div ui-view="mainView">
+</div>
 
+<script src="js/controller/register.controller.js" type="application/javascript"></script>
 <script src="js/main.js" type="application/javascript"></script>
+
 </body>
 </html>

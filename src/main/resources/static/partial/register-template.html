@@ -1,0 +1,29 @@
+Witam w formularzu :)
+<div>
+	<form action="success.html">
+		<label>Imię</label> <input type="text" required="required" ng-model="user.name"> <br>
+		<label>Nazwisko</label> <input type="text" required="required"><br>
+		<label>E-mail</label> <input type="text" required="required"><br>
+		<label>Data urodzenia:</label> <input type="date" required="required"><br>
+		<label>Klasa w szkole:</label> <select name="clases"
+			required="required">
+			<option>3 klasa podstawówki</option>
+			<option>4 klasa podstawówki</option>
+			<option>5 klasa podstawówki</option>
+			<option>6 klasa podstawówki</option>
+			<option>7 klasa podstawówki</option>
+			<option>8 klasa podstawówki</option>
+			<option>1 klasa gimnazjum</option>
+			<option>2 klasa gimnazjum</option>
+			<option>3 klasa gimnazjum</option>
+			<option>1 klasa liceum</option>
+			<option>2 klasa liceum</option>
+			<option>3 klasa liceum</option>
+		</select> <br> <label>Nazwa loginu</label> <input type="text"
+			required="required"> <br> <label>Hasło</label> <input
+			type="text" required="required"> <br> <label>Powtórz
+			Hasło</label> <input type="text" required="required">
+			 <br> <input
+			type="submit" value="Zarejestruj" ng-click="register()">
+	</form>
+</div>
