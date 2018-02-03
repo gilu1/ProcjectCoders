@@ -15,13 +15,17 @@
 <p>Witaj, {{message}}</p>
 </div>
 <a ui-sref="register">Wejdz do formularza</a><br>
-<a href="login.html" target="_blank">Zaloguj się </a><br>
+<a ui-sref="login">Zaloguj się </a><br>
 <a href= "https://gilek.e-korepetycje.net/#opinie">Sprawdź moje opinie na popularnym serwisie</a>
 
 <div ui-view="mainView">
 </div>
 
+<div ui-view="loginView">
+</div>
+
 <script src="js/controller/register.controller.js" type="application/javascript"></script>
+<script src="js/controller/login.controller.js" type="application/javascript"></script>
 <script src="js/main.js" type="application/javascript"></script>
 
 </body>
