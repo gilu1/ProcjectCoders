@@ -1,7 +1,7 @@
-function registerController($scope) {
+function registerController($scope, registerService) {
 	$scope.user = {};
 	
 	$scope.register = function () {
-		console.log($scope.user);
+		registerService.registerUser($scope.user);
 	}
 }

@@ -20,23 +20,25 @@ public class User {
 	private int id;
 
 	@Column(name = "firstName")
-	@NotBlank
+	//@NotBlank
 	private String firstName;
 
 	@Column(name = "lastName")
-	@NotBlank
+	//@NotBlank
 	private String lastName;
 
+	
+	
 	@Column(name = "email")
 	@Email
 	private String email;
 	
 	@Column(name = "Login")
-	@NotBlank
+	//@NotBlank
 	private String login;
 	
 	@Column(name = "password")
-	@NotBlank
+	//@NotBlank
 	private String password;
 
 	public int getId() {
