@@ -1,11 +1,11 @@
 
 <form>
-	<label> Login lub e-mail</label> <input type="text"> <br>
+	<label> Login lub e-mail</label> <input type="text" ng-model="user.login"> <br>
 	
-	<label>Hasło:</label> <input type="text"> <br>
+	<label>Hasło:</label> <input type="text" ng-model="user.password"> <br>
 	 <label><input type="checkbox" id="admin"> Zaloguj jako admin</label><br>
-	<input type="submit"
-		value="Login">
+	<input type="button" value="Login" ng-click="login()" />
 
 </form>
 
+ 

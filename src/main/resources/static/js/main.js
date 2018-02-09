@@ -2,6 +2,7 @@ var app = angular.module('front-end', [ 'ui.router' ]);
 
 app.config(configFunction);
 
+app.service("loginService", loginService);
 app.service("registerService", registerService);
 app.controller("registerCtrl", registerController);
 app.controller("loginCtrl", loginController);
@@ -22,12 +23,22 @@ function configFunction ($stateProvider) {
         })
         .state('login',{
                 views: {
-                    'loginView': {
+                    'mainView': {
                         templateUrl: '/partial/login.html',
                         controller: 'loginCtrl'
                     },
                     
                 }
             })
+        .state('main',{
+                views: {
+                    'mainView': {
+                        templateUrl: '/user.html',
+                        controller: ''
+                    },
+                    
+                }
+            })    
 }
+
 

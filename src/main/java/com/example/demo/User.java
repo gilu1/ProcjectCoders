@@ -27,11 +27,16 @@ public class User {
 	//@NotBlank
 	private String lastName;
 
-	
-	
+	@Column(name="Data_urodzenia")
+//	@NotBlank
+	private String data;
 	@Column(name = "email")
 	@Email
 	private String email;
+
+	@Column(name="Klasa")
+//	@NotBlank
+	private String option;
 	
 	@Column(name = "Login")
 	//@NotBlank
@@ -41,12 +46,23 @@ public class User {
 	//@NotBlank
 	private String password;
 
+	
+	
 	public int getId() {
 		return id;
 	}
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	
+	
+	public String getOption() {
+		return option;
+	}
+
+	public void setOption(String option) {
+		this.option = option;
 	}
 
 	public String getFirstName() {
@@ -88,6 +104,8 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	
 	
 	
 	
