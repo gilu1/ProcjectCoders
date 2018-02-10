@@ -3,10 +3,10 @@ Witam w formularzu :)
 
 <div>
 	<form action="success.html">
-		<label>Imię</label> <input type="text" required="required" ng-model="user.name" id="name"> <br>
+		<label>Imię</label> <input type="text"  ng-model="user.name" id="name" required minlength="4"> <br>
 		<label>Nazwisko</label> <input type="text" required="required" ng-model="user.lastName" id="lastname"><br>
 		<label>E-mail</label> <input type="text" required="required" ng-model="user.email" id="email"><br>
-		<label>Data urodzenia:</label> <input type="date" required="required" id="data"><br>
+		<label>Data urodzenia:</label> <input type="date" id="data" required><br>
 		<label>Klasa w szkole:</label> <select name="clases"
 			required="required" ng-model="user.option" id="option">
 			<option>3 klasa podstawówki</option>
@@ -23,8 +23,8 @@ Witam w formularzu :)
 			<option>3 klasa liceum</option>
 		</select> <br> <label>Nazwa loginu</label> <input type="text"
 			required="required" ng-model="user.login"> <br> <label>Hasło</label> <input
-			type="text" required="required" id="pass1"> <br> <label>Powtórz
-			Hasło</label> <input type="text" required="required" ng-model="user.password" id="pass2">
+			type="password" required="required" id="pass1"> <br> <label>Powtórz
+			Hasło</label> <input type="password" required="required" ng-model="user.password" id="pass2">
 			 <br> <input
 			type="submit" value="Zarejestruj" ng-click="register()">
 	</form>

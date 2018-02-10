@@ -9,18 +9,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
   
 </head>
+
 <body ng-app="front-end">
 
 <div ng-controller="FirstCtrl">
 <p>Witaj, {{message}}</p>
 </div>
+
+<div ui-view="as">
 <a ui-sref="register">Wejdz do formularza</a><br>
 <a ui-sref="login">Zaloguj się </a><br>
 <a href= "https://gilek.e-korepetycje.net/#opinie">Sprawdź moje opinie na popularnym serwisie</a>
 
-<div ui-view="mainView">
+
 </div>
 
+
+<div ui-view="mainView">
+</div>
 
 <script src="js/service/register.service.js" type="application/javascript"></script>
 <script src="js/service/login.service.js" type="application/javascript"></script>
@@ -29,6 +35,7 @@
 <script src="js/jquery-3.2.1.min.js" type="application/javascript"></script>
 <script src="js/register.js" type="application/javascript"></script>
 <script src="js/main.js" type="application/javascript"></script>
+
 
 </body>
 </html>

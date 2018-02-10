@@ -11,11 +11,12 @@ app.controller('FirstCtrl', [ '$scope', function($scope) {
 	$scope.message = "świecie";
 } ]);
 
+
 function configFunction ($stateProvider) {
     $stateProvider
         .state('register',{
             views: {
-                'mainView': {
+                'as': {
                     templateUrl: '/partial/register-template.html',
                     controller: 'registerCtrl'
                 }
@@ -32,13 +33,12 @@ function configFunction ($stateProvider) {
             })
         .state('main',{
                 views: {
-                    'mainView': {
+                    'as': {
                         templateUrl: '/user.html',
                         controller: ''
                     },
                     
                 }
             })    
+        
 }
-
-

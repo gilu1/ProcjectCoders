@@ -1,4 +1,5 @@
 function registerController($scope, registerService) {
+	
 	$scope.user = {};
 	
 	$scope.register = function () {
