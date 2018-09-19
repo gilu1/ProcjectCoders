@@ -10,6 +10,7 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan
 public class ProcjectCodersApplication {
 
+	//dupa
 	public static void main(String[] args) {
 		SpringApplication.run(ProcjectCodersApplication.class, args);
 	}
